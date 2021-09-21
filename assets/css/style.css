@@ -2666,10 +2666,10 @@
   }
   
   .header__logo .brand-name {
-    color: #fff;
+    color: #000;
   }
   .header__logo .brand-text {
-    color: #fff;
+    color: #000;
   }
   
   .header__logo .light-logo {
@@ -4134,7 +4134,7 @@
   }
   
   .mobile-menu-overlay__body, .page-oppen-off-sidebar__body {
-    padding: 20px 40px 
+    padding: 20px 40px 100px;
   }
   
   .mobile-menu-overlay__body .offcanvas-navigation, .page-oppen-off-sidebar__body .offcanvas-navigation {
@@ -9241,7 +9241,7 @@
   .ht-plans-menu .tab__item a.active {
     background: #ed711b;
     color: #ffffff;
-    border-color: #086AD8 !important;
+    border-color: #ed711b !important;
   }
   
   /*=====  End of pricing table  ======*/
@@ -9995,7 +9995,7 @@
   
   .ht-tab-menu li a.active {
     color: #ed711b;
-    border-color: #086AD8 !important;
+    border-color: #ed711b !important;
   }
   
   @media only screen and (min-width: 992px) and (max-width: 1199px) {
@@ -10998,13 +10998,20 @@
           -ms-flex-direction: column;
               flex-direction: column;
     }
+
+    .testimonial-slider__media {
+      width: 40%;
+      margin: auto;
+      
+    }
   }
   
   .testimonial-slider__media {
     -webkit-flex-shrink: 0;
         -ms-flex-negative: 0;
             flex-shrink: 0;
-    margin-right: 30px;
+    margin-bottom: 30px;
+    
   }
   
   .testimonial-slider__media img {
@@ -11020,6 +11027,10 @@
     -webkit-flex-grow: 1;
         -ms-flex-positive: 1;
             flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
   }
   
   .testimonial-slider__author .testimonial-rating {
@@ -11648,7 +11659,6 @@
   }
   
   .service-contact-bg {
-    background-color: #002fa6;
     background-image: url(../images/bg/intro-bg1.jpg);
     background-repeat: no-repeat;
     background-position: left bottom;
@@ -13586,6 +13596,12 @@
     -webkit-animation-iteration-count: infinite;
             animation-iteration-count: infinite;
   }
+  
+  .animation_images.one {
+    -webkit-animation-duration: 3.2s;
+            animation-duration: 3.2s;
+  }
+  
   .animation_images-2 {
     -webkit-animation-timing-function: cubic-bezier(0.54, 0.085, 0.5, 0.92);
     animation-timing-function: cubic-bezier(0.54, 0.085, 0.5, 0.92);
@@ -13600,11 +13616,6 @@
                 animation-duration: 3.2s;
       }
 
-  .animation_images.one {
-    -webkit-animation-duration: 3.2s;
-            animation-duration: 3.2s;
-  }
-  
   .animation_images.two {
     -webkit-animation-duration: 3.8s;
             animation-duration: 3.8s;
@@ -13874,7 +13885,7 @@
   }
   
   .service-hero-text .service-solution-form-wrap select:focus {
-    background: #086ad8 url("../images/icons/hero-selector-icon.webp") no-repeat center right 20px !important;
+    background: #ed711b url("../images/icons/hero-selector-icon.webp") no-repeat center right 20px !important;
   }
   
   .service-hero-text p {
@@ -14987,7 +14998,7 @@
     .header__actions--preview {
       -webkit-flex-basis: 70%;
           -ms-flex-preferred-size: 70%;
-              flex-basis: 70%;
+              flex-basis: 78%;
     }
     .header__actions--preview .header__actions {
       display: -webkit-box;
@@ -15049,15 +15060,13 @@
   }
   
   .preview-hero-bg {
-    background-size: cover;
-    background-position: 50% 50%;
     background-color: #ed711b;
-    background-repeat: no-repeat;
-}
+
+  }
   
   .pe-img-01 {
     position: absolute;
-    top: -4%;
+    top: -25%;
     left: 16%;
   }
   
@@ -15066,18 +15075,20 @@
       width: 130px;
       top: -10%;
       left: 8%;
+      z-index: -99;
     }
   }
   
   .pe-img-02 {
     position: absolute;
-    top: 12%;
-    right: 6%;
+    top: 70%;
+    right: 64%;
   }
   
   @media only screen and (max-width: 767px) {
     .pe-img-02 {
-      right: -5%;
+      left: -10%;
+      top: 36%;
     }
   }
   
@@ -15158,10 +15169,10 @@
   }
   
   .preview-hero-text h6 {
-    color: #1f1f1f;
+    color: #d2a98e;
     letter-spacing: 2px;
-    font-weight: 900;
-    font-size: 20px;
+    font-weight: 700;
+    font-size: 16px;
     text-transform: uppercase;
   }
   
@@ -15232,7 +15243,7 @@
   }
   
   .frame-screen .single-preview-item__thumbnail .overlay {
-    background-color: #ed721bc9;
+    background-color: #ed721bb4;
     position: absolute;
     top: 0;
     left: 0;
