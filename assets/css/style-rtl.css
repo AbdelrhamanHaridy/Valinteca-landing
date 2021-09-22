@@ -1,0 +1,19 @@
+
+
+#main-wrapper,
+.contact-us-area,
+.footer-area-wrapper,
+.mobile-menu-overlay__body
+{
+    direction: rtl;
+}
+.brand{
+    direction: ltr;
+}
+
+.ht-box-icon.style-02 .icon-box-wrap .content {
+    text-align: right;
+}
+.feature-list__two .feature-btn .fa-long-arrow-right:before {
+    content: "\f177";
+}
